@@ -52,6 +52,13 @@ body {
   border: 1px solid #444;
   border-radius: 5px;
 }
+.sidebar a{
+  text-decoration: none;
+  color: inherit;
+}
+.sidebar a:hover{
+color: blue;
+}
 
 /* Logo */
 .logo {
