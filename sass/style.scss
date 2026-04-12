@@ -119,3 +119,31 @@ body {
     margin: 0 10px 0 0;
   }
 }
+
+.wrapper a {
+  text-decoration: none;
+  color: #000;
+
+}
+
+.wrapper a:hover {
+  color: #1100ff;
+}
+
+.list.tags .tag-size-1 { font-size: 100%;  color: #ff9c9c; }
+.list.tags a:hover{
+  color: #1100ff;
+}
+.list.tags .tag-size-2 { font-size: 140%;  color: #ffabab; }
+.list.tags .tag-size-3 { font-size: 180%; color: #ff7b7b; }
+.list.tags .tag-size-4 { font-size: 220%; color: #ff4747; }
+.list.tags .tag-size-5 { font-size: 260%; color: #ff1313; }
+
+.list.tags li {
+  display: inline-block;
+  margin: 10px 0px;
+  line-height: 0px;
+}
+.list.tags li {
+  color: #1100ff;
+}
