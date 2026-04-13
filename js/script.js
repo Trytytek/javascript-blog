@@ -66,7 +66,7 @@ function generateTitleLinks(customSelector=''){
     titleList.innerHTML += linkHTML;
   }
 
-  const links = titleList.querySelectorAll('.titles a');
+  const links = titleList.querySelectorAll('a');
 
   for(let link of links){
     link.addEventListener('click', titleClickHandler);
@@ -231,7 +231,7 @@ function generateTags(){
   /* START LOOP: for every article: */
   for(let article of articles){
     /* [DONE]find tags wrapper */
-    const tagsWrapper = article.querySelector('.post-tags .list');
+    const tagsWrapper = article.querySelector(optArticleTagsSelector);
     /* [DONE]make html variable with empty string */
     let html = '';
     /* [DONE]get tags from data-tags attribute */
@@ -245,7 +245,7 @@ function generateTags(){
       /* [DONE]add generated code to html variable */
       html += linkHTML;
       /* [DONE] check if this link is NOT already in allTags */
-      if(!allTags.hasOwnProperty(tag)){
+      if(!Object.prototype.hasOwnProperty.call(allTags, tag)){
         /* [DONE] add generated code to allTags object */
         allTags[tag] = 1;
       } else {
